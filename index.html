@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inp-scale=1.0">
+    <title>Profit/Loss</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+    body{
+        font-family: 'Raleway', sans-serif;
+        font-size: 2rem;
+    }
+    .section {
+        padding: 2rem;
+        margin: 1rem 18rem;
+        height: 19rem;
+    }
+    h1,span{
+        text-align: center;
+        display: block;
+        margin-bottom: 0.7rem;
+    }
+    #inp1,#inp2,#inp3{
+        margin: 1rem 12rem;
+        padding: 0.4rem;
+        text-align: center;
+        display: block;
+        border-radius: 0.4rem;
+        border: 1px solid;
+    }
+    button{
+        margin: 1rem 15rem;
+        border: 1px solid  #FECACA;
+        background-color: #FECACA;
+        padding: 0.6rem;
+        border-radius: 0.7rem;
+        font-size: large;
+    }
+
+
+    </style>
+</head>
+<body>
+    <section class="section" >
+        <div class="container container-center">
+            <h1>Stocks Profit/Loss</h1>
+            <span>Initial Stock Price:</span>
+            <input type="number" id="inp1"/>
+            <span>Quantity:</span>
+            <input type="number" id="inp2"/>
+            <span>Current Stock Price:</span>
+            <input type="number" id="inp3"/>
+            <button id="btn1">Calculate</button>
+            <span id="res"></span>
+        </div>
+    </section>
+    <script src="app.js" type="text/javascript"></script>
+</body>
+</html>
