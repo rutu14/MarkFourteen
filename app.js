@@ -21,13 +21,11 @@ btn.addEventListener( "click", function clickHandler () {
         if ( curr > inp ) {
             profit = ( curr - inp ) * qty ;
             profitPer = (( profit / qty ) / inp) * 100;
-            // res.style.color = " #1C8051 ";
             res.innerHTML = " The profit is <h5 style = 'color:#1C8051'> " + profit + "</h5> and the percent is <h5 style = 'color:#1C8051'> " + profitPer.toFixed(2) + "</h5>  📈 "
         }
         else if ( inp > curr ) {
             loss = ( inp - curr ) * qty ;
             lossPer = (( loss / qty ) / inp) * 100;
-            // loss.style.color = " #cc0000 ";
             res.innerHTML = " The loss is <h5 style = 'color:#cc0000'> " + loss + "</h5> and the percent is <h5 style = 'color: #cc0000'> " + lossPer.toFixed(2) + "</h5>  📉 "
         }
         else {
