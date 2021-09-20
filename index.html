@@ -12,9 +12,9 @@
         font-size: 2rem;
     }
     .section {
-        padding: 2rem;
-        margin: 1rem 18rem;
-        height: 19rem;
+        /* padding: 2rem; */
+        margin: 1rem 10rem;
+        margin-top: 0;
     }
     h1,span{
         text-align: center;
@@ -22,7 +22,7 @@
         margin-bottom: 0.7rem;
     }
     #inp1,#inp2,#inp3{
-        margin: 1rem 12rem;
+        margin: 1rem auto;
         padding: 0.4rem;
         text-align: center;
         display: block;
@@ -30,14 +30,27 @@
         border: 1px solid;
     }
     button{
-        margin: 1rem 15rem;
-        border: 1px solid  #FECACA;
-        background-color: #FECACA;
+        display: inline-block;
+        border: 1px solid  #ddd9f0;
+        background-color: #ddd9f0;
         padding: 0.6rem;
         border-radius: 0.7rem;
         font-size: large;
+        margin: auto;
+        cursor: pointer;
     }
-
+    #res{
+        text-align: none;
+        margin: 0;
+    }
+    .btn{
+        margin: 1rem ;
+        text-align: center;
+        padding: 10px;
+    }
+    h5{
+        display: inline;
+    }
 
     </style>
 </head>
@@ -51,7 +64,10 @@
             <input type="number" id="inp2"/>
             <span>Current Stock Price:</span>
             <input type="number" id="inp3"/>
-            <button id="btn1">Calculate</button>
+            <div class="btn">
+                <button id="btn1">Calculate</button>
+                <button id="btn2">Clear</button>
+            </div>
             <span id="res"></span>
         </div>
     </section>
